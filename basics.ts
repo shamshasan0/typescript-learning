@@ -1,4 +1,4 @@
-// divide two numbers
+// add two numbers
 function add(a: number, b: number) {
     return a + b;
 }
@@ -8,7 +8,7 @@ const sum = add(2, 2);
 console.log(sum) // 4
 
 
-// divide two numbers
+// multiply two numbers
 function multiply(a: number, b: number) {
     return a * b;
 }

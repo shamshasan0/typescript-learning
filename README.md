@@ -10,4 +10,4 @@ Goal: gain a deep understanding of TypeScript before moving on to Angular.
 
 
 
-# Typescript-Learning
+# That's It!

@@ -1,9 +1,9 @@
 // find the maximum element in an array
 function findMaximum(numbers: number[]) {
-    let maximum: number = 0;
-    for (let values of numbers) {
-        if (numbers[values] > maximum) {
-            maximum = numbers[values];
+    let maximum: number = numbers[0];
+    for (let value of numbers) {
+        if (value > maximum) {
+            maximum = value;
         }
     }
     return maximum;

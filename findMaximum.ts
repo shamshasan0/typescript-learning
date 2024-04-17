@@ -1,7 +1,7 @@
 // find the maximum element in an array
 function findMaximum(numbers: number[]) {
 
-    let maximum: number = -Infinity // set maximum equal to the lowest possible negative value
+    let maximum: number = -Infinity; // set maximum equal to the lowest possible negative value
     for (let value of numbers) { // go through all elements in the numbers array
         if (value > maximum) { // check if that element is bigger than the current maximum
             maximum = value; // if so, set maximum equal to that element

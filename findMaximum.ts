@@ -11,8 +11,8 @@ function findMaximum(numbers: number[]) {
 }
 
 //tests
-const test1 = findMaximum([-20, -52, -5, -32, -90])
-const test2 = findMaximum([10, 9, 4, 19, 12])
+const test1 = findMaximum([-20, -52, -5, -32, -90]);
+const test2 = findMaximum([10, 9, 4, 19, 12]);
 
 console.log(test1); // -5
 console.log(test2); // 19

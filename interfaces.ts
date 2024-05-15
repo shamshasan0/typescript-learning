@@ -1,26 +1,11 @@
 // INTERFACES
 
-interface Faculty {
-    firstName: string;
-    lastName: string;
-    age: number;
-    responsibilities: string[];
-}
-
 interface Student {
-    firstName: string;
-    lastName: string;
-    age: number;
-    program: string;
-}
-
-// each student will have a name and a grade in the class
-type student = {
     name: string;
     grade: number;
 }
 
-let students: student[];
+let students: Student[];
 
 // students in the class
 students = [{
@@ -35,8 +20,14 @@ students = [{
 {
     name: "Dirk Nowitzki",
     grade: 90
-}]
+}];
 
+interface Faculty {
+    firstName: string;
+    lastName: string;
+    age: number;
+    responsibilities: string[];
+}
 
 class Professor implements Faculty {
     firstName: string;
@@ -61,29 +52,21 @@ class Professor implements Faculty {
     }
 }
 
-class TeachingAssistant implements Student {
+
+
+class TeachingAssistant {
 
     firstName: string;
     lastName: string;
     age: number;
     program: string;
+    responsibilities: string[];
 
     gradePapers() {
-
-    }
-
-    updateGrades() {
 
     }
 
     giveFeedback(): void {
 
     }
-
-    overRideGrades(): void {
-        throw new Error("You do not have permissions to override grades.");
-    }
-
 }
-
-

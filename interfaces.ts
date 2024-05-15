@@ -1,14 +1,11 @@
 // INTERFACES
 
-interface Student {
+type Student = {
     name: string;
     grade: number;
 }
 
-let students: Student[];
-
-// students in the class
-students = [{
+let students: Student[] = [{
     name: "Michael Jordan",
     grade: 93
 },
@@ -22,7 +19,7 @@ students = [{
     grade: 90
 }];
 
-interface Faculty {
+type Faculty = {
     firstName: string;
     lastName: string;
     age: number;
@@ -52,7 +49,7 @@ class Professor implements Faculty {
     }
 }
 
-class TeachingAssistant implements Faculty {
+class TeachingAssistant {
 
     firstName: string;
     lastName: string;

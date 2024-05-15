@@ -52,9 +52,7 @@ class Professor implements Faculty {
     }
 }
 
-
-
-class TeachingAssistant {
+class TeachingAssistant implements Faculty {
 
     firstName: string;
     lastName: string;
